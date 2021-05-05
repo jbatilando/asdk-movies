@@ -1,0 +1,6 @@
+framework module Pods_asdk_movies {
+  umbrella header "Pods-asdk-movies-umbrella.h"
+
+  export *
+  module * { export * }
+}
