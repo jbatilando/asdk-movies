@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (atomic, strong) NSString *title;
 @property (atomic, strong) NSString *overview;
+@property (atomic, strong) NSString *posterPath;
 
 - (id)init:(NSDictionary *)dictionary;
 + (NSArray *)movies:(NSArray *)dictionaries;

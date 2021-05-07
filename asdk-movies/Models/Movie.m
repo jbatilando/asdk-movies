@@ -14,6 +14,7 @@
     
     self.title = dictionary[@"title"];
     self.overview = dictionary[@"overview"];
+    self.posterPath = dictionary[@"poster_path"];
     
     return self;
 }

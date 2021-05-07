@@ -23,6 +23,10 @@
     _movie = movie;
     
     // TODO: movieImageNode
+    _movieImageNode = [[ASNetworkImageNode alloc] init];
+    _movieImageNode.URL = [NSURL URLWithString: [NSString stringWithFormat:@"https://image.tmdb.org/t/p/w500/%@", movie.posterPath]];
+    [self addSubnode:_movieImageNode];
+
     _titleNode = [[ASTextNode alloc] init];
     _titleNode.attributedText = [[NSAttributedString alloc] initWithString:movie.title];
     [self addSubnode:_titleNode];
@@ -37,12 +41,14 @@
 }
 
 - (ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize {
+    _movieImageNode.style.preferredSize = CGSizeMake(100.0f, 200.0f);
+    
     ASStackLayoutSpec *stackLayoutSpec = [ASStackLayoutSpec
                                           stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical
-                                          spacing:10.0f
+                                          spacing:8.0f
                                           justifyContent:ASStackLayoutJustifyContentStart
                                           alignItems:ASStackLayoutAlignItemsStart
-                                          children:@[_titleNode, _overviewNode]];
+                                          children:@[_movieImageNode, _titleNode, _overviewNode]];
     
     return [ASInsetLayoutSpec
             insetLayoutSpecWithInsets:UIEdgeInsetsMake(8.0f, 16.0f, 8.0f, 16.0f)
