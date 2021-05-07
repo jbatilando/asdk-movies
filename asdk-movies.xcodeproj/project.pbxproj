@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		137528FBC27735E5E45373F9 /* Pods_asdk_movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDC37A2C79047FEBEAB8B02 /* Pods_asdk_movies.framework */; };
 		40D40154FE2FC5D31EC864A2 /* Pods_asdk_moviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87952A2ADFF89DDCBB418E /* Pods_asdk_moviesTests.framework */; };
+		626A832D264305B60064629E /* MoviesFeedNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A832C264305B60064629E /* MoviesFeedNodeController.m */; };
+		626A833026430F650064629E /* MovieCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A832F26430F650064629E /* MovieCellNode.m */; };
 		626E826F2642537B008CF047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E826E2642537B008CF047 /* AppDelegate.m */; };
 		626E82722642537B008CF047 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E82712642537B008CF047 /* SceneDelegate.m */; };
 		626E82782642537B008CF047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626E82762642537B008CF047 /* Main.storyboard */; };
@@ -17,7 +19,6 @@
 		626E82802642537C008CF047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E827F2642537C008CF047 /* main.m */; };
 		626E828A2642537C008CF047 /* asdk_moviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E82892642537C008CF047 /* asdk_moviesTests.m */; };
 		626E82952642537C008CF047 /* asdk_moviesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E82942642537C008CF047 /* asdk_moviesUITests.m */; };
-		626E82A726425414008CF047 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E82A626425414008CF047 /* MoviesViewController.m */; };
 		626E82AA2642606D008CF047 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 626E82A92642606D008CF047 /* Movie.m */; };
 		62A6B23F2642690F00FF2E4E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A6B23E2642690F00FF2E4E /* Constants.m */; };
 		B3DC57F25F67ECE4F0666BDE /* Pods_asdk_movies_asdk_moviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B137D0AE6E0B817DF53FD /* Pods_asdk_movies_asdk_moviesUITests.framework */; };
@@ -45,6 +46,10 @@
 		2F87952A2ADFF89DDCBB418E /* Pods_asdk_moviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_asdk_moviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDC37A2C79047FEBEAB8B02 /* Pods_asdk_movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_asdk_movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7FA8661D488AFBDBA2C409 /* Pods-asdk-moviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asdk-moviesTests.release.xcconfig"; path = "Target Support Files/Pods-asdk-moviesTests/Pods-asdk-moviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		626A832B264305B60064629E /* MoviesFeedNodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesFeedNodeController.h; sourceTree = "<group>"; };
+		626A832C264305B60064629E /* MoviesFeedNodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesFeedNodeController.m; sourceTree = "<group>"; };
+		626A832E26430F650064629E /* MovieCellNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCellNode.h; sourceTree = "<group>"; };
+		626A832F26430F650064629E /* MovieCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCellNode.m; sourceTree = "<group>"; };
 		626E826A2642537B008CF047 /* asdk-movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "asdk-movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626E826D2642537B008CF047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		626E826E2642537B008CF047 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,8 +66,6 @@
 		626E82902642537C008CF047 /* asdk-moviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "asdk-moviesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626E82942642537C008CF047 /* asdk_moviesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = asdk_moviesUITests.m; sourceTree = "<group>"; };
 		626E82962642537C008CF047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		626E82A526425414008CF047 /* MoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
-		626E82A626425414008CF047 /* MoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
 		626E82A82642606D008CF047 /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		626E82A92642606D008CF047 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		62A6B23D2642690F00FF2E4E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 		626E82A22642538F008CF047 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				626A832E26430F650064629E /* MovieCellNode.h */,
+				626A832F26430F650064629E /* MovieCellNode.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,8 +188,8 @@
 		626E82A326425394008CF047 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				626E82A526425414008CF047 /* MoviesViewController.h */,
-				626E82A626425414008CF047 /* MoviesViewController.m */,
+				626A832B264305B60064629E /* MoviesFeedNodeController.h */,
+				626A832C264305B60064629E /* MoviesFeedNodeController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,7 +213,6 @@
 				A3F20CC0E59E106798AB19FA /* Pods-asdk-moviesTests.debug.xcconfig */,
 				3C7FA8661D488AFBDBA2C409 /* Pods-asdk-moviesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -449,11 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626A833026430F650064629E /* MovieCellNode.m in Sources */,
+				626A832D264305B60064629E /* MoviesFeedNodeController.m in Sources */,
 				626E826F2642537B008CF047 /* AppDelegate.m in Sources */,
 				626E82802642537C008CF047 /* main.m in Sources */,
 				626E82AA2642606D008CF047 /* Movie.m in Sources */,
 				626E82722642537B008CF047 /* SceneDelegate.m in Sources */,
-				626E82A726425414008CF047 /* MoviesViewController.m in Sources */,
 				62A6B23F2642690F00FF2E4E /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
